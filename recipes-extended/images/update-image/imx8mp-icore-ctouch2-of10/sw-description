@@ -1,0 +1,34 @@
+software =
+{
+	version = "1.1";
+
+	imx8mp-icore-ctouch2-of10 = {
+		hardware-compatibility: [ "v1" ];
+		stable : {
+			copy1 : {
+				images: (
+					{
+						filename = "fsl-image-multimedia-full-imx8mp-icore-ctouch2-of10.ext4.gz";
+						type = "raw";
+						compressed = "zlib";
+						device = "/dev/mmcblk1p2";
+						sha256 = "$swupdate_get_sha256(fsl-image-multimedia-full-imx8mp-icore-ctouch2-of10.ext4.gz)";
+						installed-directly = true;
+					}
+				);
+			};
+			copy2 : {
+				images: (
+					{
+						filename = "fsl-image-multimedia-full-imx8mp-icore-ctouch2-of10.ext4.gz";
+						type = "raw";
+						compressed = "zlib";
+						device = "/dev/mmcblk1p4";
+						sha256 = "$swupdate_get_sha256(fsl-image-multimedia-full-imx8mp-icore-ctouch2-of10.ext4.gz)";
+						installed-directly = true;
+					}
+				);
+			};
+		};
+	}
+}
