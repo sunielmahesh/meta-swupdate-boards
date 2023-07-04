@@ -11,7 +11,7 @@ software =
 						filename = "fsl-image-multimedia-full-imx8mp-icore-ctouch2-of10.ext4.gz";
 						type = "raw";
 						compressed = "zlib";
-						device = "/dev/mmcblk1p2";
+						device = "/dev/mmcblk1p3";
 						sha256 = "$swupdate_get_sha256(fsl-image-multimedia-full-imx8mp-icore-ctouch2-of10.ext4.gz)";
 						installed-directly = true;
 					}
@@ -23,7 +23,7 @@ software =
 						filename = "fsl-image-multimedia-full-imx8mp-icore-ctouch2-of10.ext4.gz";
 						type = "raw";
 						compressed = "zlib";
-						device = "/dev/mmcblk1p4";
+						device = "/dev/mmcblk1p5";
 						sha256 = "$swupdate_get_sha256(fsl-image-multimedia-full-imx8mp-icore-ctouch2-of10.ext4.gz)";
 						installed-directly = true;
 					}
