@@ -13,8 +13,13 @@ software =
 						compressed = "zlib";
 						device = "/dev/mmcblk1p3";
 						sha256 = "$swupdate_get_sha256(fsl-image-multimedia-full-imx8mp-icore-ctouch2-of10.ext4.gz)";
-						installed-directly = true;
-					}
+					},
+					{
+                                                filename = "boot_vfat.img";
+                                                type = "raw";
+                                                device = "/dev/mmcblk1p1";
+                                                sha256 = "$swupdate_get_sha256(boot_vfat.img)";
+                                        }
 				);
 			};
 			copy2 : {
@@ -25,8 +30,13 @@ software =
 						compressed = "zlib";
 						device = "/dev/mmcblk1p5";
 						sha256 = "$swupdate_get_sha256(fsl-image-multimedia-full-imx8mp-icore-ctouch2-of10.ext4.gz)";
-						installed-directly = true;
-					}
+					},
+					{
+                                                filename = "boot_vfat.img";
+                                                type = "raw";
+                                                device = "/dev/mmcblk1p2";
+                                                sha256 = "$swupdate_get_sha256(boot_vfat.img)";
+                                        }
 				);
 			};
 		};
